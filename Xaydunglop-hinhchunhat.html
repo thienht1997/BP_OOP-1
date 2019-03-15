@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Xay dung lop hinh tron</title>
+</head>
+
+<body>
+
+    <script>
+        let Rectangle = function (a, b) {
+          
+            this.getWidth = function () {
+                return a;
+            }
+            this.getLength = function () {
+                return b;
+            }
+            this.getPerimeter = function () {
+                return (a + b) * 2;
+            }
+             this.getArea = function () {
+                    return a * b;
+
+                }
+            };
+            let c = new Rectangle(2, 5);
+            alert("Radius : " + c.getPerimeter() + " ; area : " +c.getArea());
+    </script>
+</body>
+
+</html>
