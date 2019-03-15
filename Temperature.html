@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Convert</title>
+</head>
+
+<body>
+
+    <script>
+        let Temperature = function (c) {
+          
+            this.getDoC = function () {
+                return c;
+            }
+            this.DoC_SangF = function () {
+                return (c*1.8)+32;
+            }
+            this.DoC_SangK = function () {
+                return c+273.15;
+            }
+            };
+            let c = new Temperature(25);
+            alert(c.getDoC() + " do C = " + c.DoC_SangF() + " do F va = " +c.DoC_SangK()+" do K");
+    </script>
+</body>
+
+</html>
