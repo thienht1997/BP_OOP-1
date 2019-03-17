@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lamp</title>
+</head>
+
+<body>
+    <div align="center">
+        <img id="lamp" src="img/lampoff.png" height="450" width="279" /><br><br>
+        <input type="button" id="on" value="On" onclick="newLamp.turnOn();">
+        <input type="button" id="off" value="Off" onclick="newLamp.turnOff();">
+    </div>
+
+</body>
+<script>
+    let ElectricLamp = function (_status) {
+        this.status = _status;
+        this.turnOff = function () {
+            this.status == false;
+            document.getElementById("lamp").src = "img/lampoff.png";
+            console.log("LEDTurnOff!");b 
+        }
+        this.turnOn = function () {
+            this.status == true;
+            document.getElementById("lamp").src  = "img/lampon.png";
+            console.log("LEDTurnOn!");
+        }
+    }
+
+    var newLamp = new ElectricLamp(false);
+
+</script>
+
+</html>
